@@ -117,7 +117,8 @@ public class DevicesFragment extends ListFragment {
             if(!permissionMissing) {
                 for (BluetoothDevice device : bluetoothAdapter.getBondedDevices())
                     if (device.getType() != BluetoothDevice.DEVICE_TYPE_LE)
-                        listItems.add(device);
+                        if (device.getAddress().equals("00:10:CC:4F:36:03"))
+                            listItems.add(device);
                 Collections.sort(listItems, BluetoothUtil::compareTo);
             }
         }
