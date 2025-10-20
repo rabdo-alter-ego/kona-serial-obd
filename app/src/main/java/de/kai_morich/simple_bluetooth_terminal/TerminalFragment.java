@@ -12,6 +12,8 @@ import android.content.ServiceConnection;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -170,6 +172,9 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         atsp6Btn.setOnClickListener(v -> send("ATSP6"));
         View atcra7ecBtn = view.findViewById(R.id.btn_atcra7ec);
         atcra7ecBtn.setOnClickListener(v -> send("ATCRA7EC"));
+
+        View vibrate = view.findViewById(R.id.btn_vibrate);
+        vibrate.setOnClickListener(v -> vibrateDevice(requireContext(), 1000));
 
         View btn220105 = view.findViewById(R.id.btn_soc);
         btn220105.setOnClickListener(v ->
@@ -662,6 +667,20 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     public void onSerialIoError(Exception e) {
         status("connection lost: " + e.getMessage());
         disconnect();
+    }
+
+
+    // Function to vibrate
+    public void vibrateDevice(Context context, long milliseconds) {
+        Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+
+        if (vibrator != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                vibrator.vibrate(VibrationEffect.createOneShot(milliseconds, VibrationEffect.DEFAULT_AMPLITUDE));
+            } else {
+                vibrator.vibrate(milliseconds);
+            }
+        }
     }
 
 }
