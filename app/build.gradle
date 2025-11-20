@@ -7,7 +7,7 @@ android {
         minSdk 18
         vectorDrawables.useSupportLibrary true
 
-        applicationId "de.kai_morich.simple_bluetooth_terminal_mod"
+        applicationId "de.kai_morich.simple_bluetooth_terminal_modII"
         versionCode 1
         versionName "1.0"
     }
