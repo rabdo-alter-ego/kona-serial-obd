@@ -47,7 +47,7 @@ There are other resources that helped me a lot in this project like EVNotify ins
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3d8a40d7133497caa11051eaac6f1a2)](https://www.codacy.com/manual/kai-morich/SimpleBluetoothTerminal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kai-morich/SimpleBluetoothTerminal&amp;utm_campaign=Badge_Grade)
 
 # My projects
-https://github.com/rabdo-alter-ego/kona-serial-obd-py/blob/main/README.md
+- https://github.com/rabdo-alter-ego/kona-serial-obd-py/blob/main/README.md
 
 # SimpleBluetoothTerminal
 
@@ -63,6 +63,7 @@ This App implements RFCOMM connection to the well-known SPP UUID 00001101-0000-1
 I got various requests asking for help with Android development or source code for my 
 [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) app.
 Here you find a simplified version of my app.
+
 
 
 
