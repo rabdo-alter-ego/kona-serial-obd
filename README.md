@@ -30,18 +30,19 @@ This Android app comes directly from https://github.com/kai-morich/SimpleBluetoo
 - added initilizations commands, added commands to parse the main battery voltage and soc
 - removed terminal and added notifications instead (ui caused more troubles than it solved)
 
+# Resources
 There are other resources that helped me a lot in this project like EVNotify inspired me first in this hard journey or the recent project niro-spy that gave me the willingness of sharing
-https://github.com/EVNotify/EVNotify/ 
-https://github.com/Tuoris/niro-spy
-https://github.com/OBDb/Hyundai-Kona-Electric
-https://github.com/JejuSoul/OBD-PIDs-for-HKMC-EVs
+- https://github.com/EVNotify/EVNotify/ 
+- https://github.com/Tuoris/niro-spy
+- https://github.com/OBDb/Hyundai-Kona-Electric
+- https://github.com/JejuSoul/OBD-PIDs-for-HKMC-EVs
 
 
 # Similiar projects
-https://github.com/nickn17/evDash
-https://github.com/cyberelectronics/Konassist
-https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3
-https://github.com/Tuoris/elm-dashboard
+- https://github.com/nickn17/evDash
+- https://github.com/cyberelectronics/Konassist
+- https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3
+- https://github.com/Tuoris/elm-dashboard
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3d8a40d7133497caa11051eaac6f1a2)](https://www.codacy.com/manual/kai-morich/SimpleBluetoothTerminal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kai-morich/SimpleBluetoothTerminal&amp;utm_campaign=Badge_Grade)
 
@@ -62,6 +63,7 @@ This App implements RFCOMM connection to the well-known SPP UUID 00001101-0000-1
 I got various requests asking for help with Android development or source code for my 
 [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) app.
 Here you find a simplified version of my app.
+
 
 
 
