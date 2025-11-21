@@ -9,13 +9,19 @@ This project is not for everybody, it's mainly for developers: lots of times wit
 
 # My hardware
 In order to use this project you will need:
-- A hyundai Kona (~2020) or a hyundai Kia niro (kona and kia niro seems to use the same protocol i need to check the exact model of my car )
+- A hyundai Kona (~2020 i need to check the exact model of my car ) or a hyundai Kia niro (kona and kia niro seems to use the same protocol)
 - An obd2 elm serial bluetooth chip that supports EV ecu (not all supports it). There are plenty of discussion about the "good" and the "bad" OBD, onestly i don t care and bought the cheapest one from aliexpress (photo) and it worked but remember that the OBD needs to be BLUETOOTH SERIAL!!! The use of the software is at your own risk. I am not liable for damage caused by improper use or cheap, fake OBD2 dongle.
 - An android mobile with version over 6 but below 13 (ask Google why i need a master in bluetooth to upgrade to android 14 and discontinue old compatibility)
 
 
 <img width="600" height="400" alt="immagine" src="https://github.com/user-attachments/assets/b843a3ee-ab34-4eea-ab8a-98c80fedf239" />
 
+# Known facts
+- the car seems to keep the obd running only when turned on or during charge (need to check for edge cases like soc 100% but still plugged)
+- the device sometimes responds with NO DATA while charging, the solution seems to reconnect (problem found from EV notify github issues and happened to me only once)
+
+# Know issue
+- after clicking start session a notification of the background process will appear and it never stops until stop session gets clicked
 
 # Main inspirators
 This Android app comes directly from https://github.com/kai-morich/SimpleBluetoothTerminal, i noticed that it was successfully running some commands on my OBD so I cloned the repo and made some modifications to it:
@@ -42,13 +48,6 @@ https://github.com/Tuoris/elm-dashboard
 # My projects
 https://github.com/rabdo-alter-ego/kona-serial-obd-py/blob/main/README.md
 
-# Known facts
-- the car seems to keep the obd running only when turned on or during charge (need to check for edge cases like soc 100% but still plugged)
-- the device sometimes responds with NO DATA while charging, the solution seems to reconnect (problem found from EV notify github issues and happened to me only once)
-
-# Know issue
-- after clicking start session a notification of the background process will appear and it never stops until stop session gets clicked
-
 # SimpleBluetoothTerminal
 
 This Android app provides a line-oriented terminal / console for classic Bluetooth (2.x) devices implementing the Bluetooth Serial Port Profile (SPP)
@@ -63,6 +62,7 @@ This App implements RFCOMM connection to the well-known SPP UUID 00001101-0000-1
 I got various requests asking for help with Android development or source code for my 
 [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) app.
 Here you find a simplified version of my app.
+
 
 
 
