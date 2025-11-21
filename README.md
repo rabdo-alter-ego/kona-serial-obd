@@ -10,7 +10,7 @@ This project is not for everybody, it's mainly for developers: lots of times wit
 # My hardware
 In order to use this project you will need:
 - A hyundai Kona (~2020) or a hyundai Kia niro (kona and kia niro seems to use the same protocol i need to check the exact model of my car )
-- An obd2 elm serial bluetooth chip that supports EV ecu (not all supports it). There are plenty of discussion about the "good" and the "bad" OBD, onestly i don t care and bought the cheapest one from aliexpress (photo) and it works but remember that the OBD needs to be BLUETOOTH SERIAL!!! The use of the software is at your own risk. I am not liable for damage caused by improper use or cheap, fake OBD2 dongle.
+- An obd2 elm serial bluetooth chip that supports EV ecu (not all supports it). There are plenty of discussion about the "good" and the "bad" OBD, onestly i don t care and bought the cheapest one from aliexpress (photo) and it worked but remember that the OBD needs to be BLUETOOTH SERIAL!!! The use of the software is at your own risk. I am not liable for damage caused by improper use or cheap, fake OBD2 dongle.
 - An android mobile with version over 6 but below 13 (ask Google why i need a master in bluetooth to upgrade to android 14 and discontinue old compatibility)
 
 
@@ -60,6 +60,7 @@ This App implements RFCOMM connection to the well-known SPP UUID 00001101-0000-1
 I got various requests asking for help with Android development or source code for my 
 [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) app.
 Here you find a simplified version of my app.
+
 
 
 
