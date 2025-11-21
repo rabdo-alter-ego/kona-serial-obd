@@ -1,4 +1,4 @@
-# Kona Serial Obd
+# Kona Serial Obd Android
 Allows you to connect to the ecu of the car to obtain SOC, BATTERIES VOLTAGE and STATE OF CHARGE informations. I suggest you to make a simple change to the app parser functions in serialService to deliver the data to your server or to Home Assistant (personally i prefer Tinytuja).
 This project is not for everybody, it's mainly for developers: lots of times with tecnology we can just try and see if it works or not, but i don t suggest you to test this project on your car if you don t know what you are doing.
 
@@ -60,6 +60,7 @@ This App implements RFCOMM connection to the well-known SPP UUID 00001101-0000-1
 I got various requests asking for help with Android development or source code for my 
 [Serial Bluetooth Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal) app.
 Here you find a simplified version of my app.
+
 
 
 
